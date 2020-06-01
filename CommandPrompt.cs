@@ -15,7 +15,7 @@ namespace MiniCommandPrompt {
       Dictionary<string,string> mValidCommands = new Dictionary<string,string>();
       // setting current path
       //FileInfo mCurrentPath = new FileInfo (@"d:\");
-      DirectoryInfo mCurrentDirectory = new DirectoryInfo (@"d:\");
+      DirectoryInfo mCurrentDirectory = new DirectoryInfo (Directory.GetCurrentDirectory ());
       DirectoryInfo mNewDirectory = null;
       DirectoryInfo[] mDirInfos = null;
       FileInfo[] mFileInfos = null;
